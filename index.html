@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>BHARTEK</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Segoe UI,Arial,sans-serif;
+background:#eef6fc;
+color:#1c2f45;
+}
+
+header{
+background:linear-gradient(90deg,#0d47a1,#1976d2,#42a5f5);
+padding:30px;
+text-align:center;
+color:white;
+box-shadow:0 3px 10px rgba(0,0,0,.2);
+}
+
+header h1{
+margin:0;
+font-size:42px;
+}
+
+nav{
+background:#0b3d91;
+display:flex;
+justify-content:center;
+gap:30px;
+padding:15px;
+}
+
+nav button{
+background:white;
+color:#0b3d91;
+border:none;
+padding:10px 22px;
+font-size:16px;
+border-radius:6px;
+cursor:pointer;
+font-weight:bold;
+}
+
+.hero{
+
+padding:50px;
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+justify-content:space-around;
+
+}
+
+.text{
+max-width:600px;
+}
+
+.hero h2{
+font-size:40px;
+color:#0b3d91;
+}
+
+.badge{
+display:inline-block;
+background:#ff9800;
+color:white;
+padding:10px 20px;
+border-radius:30px;
+font-weight:bold;
+margin-bottom:20px;
+}
+
+img{
+width:420px;
+max-width:90%;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,.25);
+}
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+padding:40px;
+}
+
+.card{
+
+background:white;
+padding:25px;
+width:280px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,.15);
+
+}
+
+footer{
+background:#0d47a1;
+color:white;
+padding:20px;
+text-align:center;
+margin-top:40px;
+}
+
+.modal{
+display:none;
+position:fixed;
+left:0;
+top:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.5);
+}
+
+.modal-content{
+background:white;
+margin:8% auto;
+padding:30px;
+width:450px;
+border-radius:8px;
+}
+
+.close{
+float:right;
+font-size:28px;
+cursor:pointer;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>BHARTEK</h1>
+
+<p>Advanced PCIe Diagnostics • Performance Analysis • Root Cause Investigation</p>
+
+</header>
+
+<nav>
+
+<button onclick="about()">About</button>
+
+
+
+
+
+</nav>
+
+<section class="hero">
+
+<div class="text">
+
+<div class="badge">
+🚧 WORK IN PROGRESS • STEALTH MODE
+</div>
+
+<h2>Building Next Generation PCIe Diagnostic Intelligence</h2>
+
+<p>
+
+Our startup is developing innovative diagnostic tools and engineering
+services focused on PCI Express subsystems.
+<br>
+We help accelerate debugging, reliability validation,
+performance tuning, interoperability analysis,
+and root cause identification for modern PCIe platforms.
+
+</p>
+
+</div>
+
+<div>
+
+<!-- Replace with open-license PCIe/server image -->
+
+<img src="images/pcie.jpg">
+
+</div>
+
+</section>
+
+<section class="cards">
+
+<div class="card">
+
+<h3>Engineering Services</h3>
+
+<p>
+
+PCIe debug
+<br>
+Firmware validation
+<br>
+Signal integrity analysis
+<br>
+System integration
+<br>
+Failure triage
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Diagnostic Tools</h3>
+
+<p>
+
+Advanced trace analysis
+<br>
+Failure signature detection
+<br>
+Automation
+<br>
+Hardware diagnostics
+<br>
+Telemetry visualization
+
+</p>
+
+</div>
+
+<div class="card" id="funding">
+
+<h3>Seeking Funding</h3>
+
+<p>
+
+Currently operating in Stealth Mode.
+
+Looking for Angel Investors,
+
+Strategic Partners,
+
+Early Design Partners.
+
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 BHARTEK
+
+</footer>
+
+<div id="aboutModal" class="modal">
+
+<div class="modal-content">
+
+<span class="close" onclick="closeModal()">&times;</span>
+
+<h2>About</h2>
+
+<p>
+
+<b>Co-Founder</b><br>
+
+Bharathi Baskaran
+
+</p>
+
+<p>
+
+<b>Co-Founder</b><br>
+
+Akila Baskaran
+
+</p>
+
+<p>
+
+Developing advanced PCIe diagnostics and engineering
+solutions for next-generation computing platforms.
+
+</p>
+
+<p>
+Contact: bharbird@bhartek.com
+</p>
+
+</div>
+
+</div>
+
+<script>
+
+function about(){
+document.getElementById("aboutModal").style.display="block";
+}
+
+function closeModal(){
+document.getElementById("aboutModal").style.display="none";
+}
+
+window.onclick=function(event){
+if(event.target==document.getElementById("aboutModal"))
+closeModal();
+}
+
+</script>
+
+</body>
+
+</html>
