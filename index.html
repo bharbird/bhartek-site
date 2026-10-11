@@ -1,303 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>BHARTEK</title>
-
+<title>BharTek — Computer &amp; Systems Engineering Services</title>
+<meta name="description" content="BharTek provides computer repair, system setup, Linux and network services, and low-level systems engineering for clients in the Austin and Dallas areas.">
 <style>
-
-body{
-margin:0;
-font-family:Segoe UI,Arial,sans-serif;
-background:#eef6fc;
-color:#1c2f45;
-}
-
-header{
-background:linear-gradient(90deg,#0d47a1,#1976d2,#42a5f5);
-padding:30px;
-text-align:center;
-color:white;
-box-shadow:0 3px 10px rgba(0,0,0,.2);
-}
-
-header h1{
-margin:0;
-font-size:42px;
-}
-
-nav{
-background:#0b3d91;
-display:flex;
-justify-content:center;
-gap:30px;
-padding:15px;
-}
-
-nav button{
-background:white;
-color:#0b3d91;
-border:none;
-padding:10px 22px;
-font-size:16px;
-border-radius:6px;
-cursor:pointer;
-font-weight:bold;
-}
-
-.hero{
-
-padding:50px;
-display:flex;
-flex-wrap:wrap;
-align-items:center;
-justify-content:space-around;
-
-}
-
-.text{
-max-width:600px;
-}
-
-.hero h2{
-font-size:40px;
-color:#0b3d91;
-}
-
-.badge{
-display:inline-block;
-background:#0b3d91;
-color:white;
-padding:10px 20px;
-border-radius:30px;
-font-weight:bold;
-margin-bottom:20px;
-}
-
-img{
-width:420px;
-max-width:90%;
-border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,.25);
-}
-
-.cards{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:30px;
-padding:40px;
-}
-
-.card{
-
-background:white;
-padding:25px;
-width:280px;
-border-radius:10px;
-box-shadow:0 4px 10px rgba(0,0,0,.15);
-
-}
-
-footer{
-background:#0d47a1;
-color:white;
-padding:20px;
-text-align:center;
-margin-top:40px;
-}
-
-.modal{
-display:none;
-position:fixed;
-left:0;
-top:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,.5);
-}
-
-.modal-content{
-background:white;
-margin:8% auto;
-padding:30px;
-width:450px;
-border-radius:8px;
-}
-
-.close{
-float:right;
-font-size:28px;
-cursor:pointer;
-}
-
+  :root { color-scheme: light; --navy:#0d3a8b; --blue:#1565d8; --ink:#1a2434; --muted:#55627a; --line:#dde5f2; --bg:#eef4fb; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+         color:var(--ink); background:#fff; line-height:1.6; }
+  header { background:linear-gradient(100deg,var(--navy),#3d92ef); color:#fff; padding:44px 24px 34px; text-align:center; }
+  header h1 { margin:0; font-size:46px; letter-spacing:3px; font-weight:800; }
+  header p { margin:10px 0 0; font-size:17px; opacity:.95; }
+  nav { background:#0a2f72; text-align:center; padding:12px; }
+  nav a { color:#fff; text-decoration:none; font-weight:600; margin:0 16px; font-size:15px; }
+  nav a:hover { text-decoration:underline; }
+  .wrap { max-width:960px; margin:0 auto; padding:0 24px; }
+  .hero { background:var(--bg); padding:48px 0 52px; }
+  .hero h2 { color:var(--navy); font-size:34px; line-height:1.25; margin:0 0 16px; }
+  .hero p { font-size:17px; color:var(--muted); margin:0 0 12px; max-width:720px; }
+  section { padding:44px 0; }
+  h3 { color:var(--navy); font-size:24px; margin:0 0 18px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:20px; }
+  .card { border:1px solid var(--line); border-radius:10px; padding:22px; background:#fff; }
+  .card h4 { margin:0 0 10px; font-size:17px; color:var(--navy); }
+  .card p { margin:0; color:var(--muted); font-size:15px; }
+  .card ul { margin:8px 0 0 18px; padding:0; color:var(--muted); font-size:15px; }
+  .card li { margin-bottom:5px; }
+  .alt { background:var(--bg); }
+  .contact a { color:var(--blue); font-weight:600; }
+  footer { border-top:1px solid var(--line); padding:26px 0; text-align:center; color:var(--muted); font-size:14px; }
 </style>
-
 </head>
-
 <body>
 
 <header>
-
-<h1>BHARTEK</h1>
-
-<p>Advanced PCIe Diagnostics • Performance Analysis • Root Cause Investigation</p>
-
+  <h1>BHARTEK</h1>
+  <p>Computer Services &middot; Linux &amp; Systems Engineering &middot; Diagnostics</p>
 </header>
 
 <nav>
-
-<button onclick="about()">About</button>
-
-
-
-
-
+  <a href="#services">Services</a>
+  <a href="#expertise">Expertise</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
 </nav>
 
-<section class="hero">
-
-<div class="text">
-
-<div class="badge">
-WORK IN PROGRESS • STEALTH MODE
+<div class="hero">
+  <div class="wrap">
+    <h2>Practical computer and systems engineering services.</h2>
+    <p>BharTek provides hardware diagnostics, operating system setup and recovery, network
+       configuration, and low-level systems work for individuals and small offices.</p>
+    <p>The practice is built on hands-on Linux systems engineering — kernel building and
+       patching, driver-level debugging, and hardware bring-up.</p>
+  </div>
 </div>
 
-<h2>Building Next Generation PCIe Diagnostic Intelligence</h2>
-
-<p>
-
-Our startup is developing innovative diagnostic tools and engineering
-services focused on PCI Express subsystems.
-<br>
-We help accelerate debugging, reliability validation,
-performance tuning, interoperability analysis,
-and root cause identification for modern PCIe platforms.
-
-</p>
-
-</div>
-
-<div>
-
-<!-- Replace with open-license PCIe/server image -->
-
-<img src="0.jpg"
-  alt="Image of zoomed in motherboard">
-
-</div>
-
+<section id="services">
+  <div class="wrap">
+    <h3>Services</h3>
+    <div class="grid">
+      <div class="card">
+        <h4>Computer Repair &amp; Diagnostics</h4>
+        <ul>
+          <li>Hardware fault isolation and component testing</li>
+          <li>Boot failure and performance troubleshooting</li>
+          <li>Upgrades, builds, and component replacement</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>Operating Systems</h4>
+        <ul>
+          <li>Linux and Windows installation and migration</li>
+          <li>Data recovery and backup configuration</li>
+          <li>Dual-boot and virtual machine setup</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>Networking &amp; Small Office IT</h4>
+        <ul>
+          <li>Router, Wi-Fi, and LAN configuration</li>
+          <li>Domain, DNS, and email routing setup</li>
+          <li>Website deployment and hosting</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>Systems Engineering</h4>
+        <ul>
+          <li>Custom Linux kernel builds and configuration</li>
+          <li>Kernel module development and patching</li>
+          <li>Driver-level and kernel log debugging</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section class="cards">
+<section id="expertise" class="alt">
+  <div class="wrap">
+    <h3>Technical Focus</h3>
+    <div class="grid">
+      <div class="card">
+        <h4>Linux Internals</h4>
+        <p>Building and deploying custom kernels from upstream source, authoring out-of-tree
+           modules in C, applying and validating CVE patches, and reproducing faults in
+           isolated QEMU environments.</p>
+      </div>
+      <div class="card">
+        <h4>Edge &amp; Embedded Platforms</h4>
+        <p>Deploying and tuning real-time computer vision workloads on NVIDIA Jetson hardware,
+           optimizing throughput against constrained memory and compute budgets.</p>
+      </div>
+      <div class="card">
+        <h4>Infrastructure</h4>
+        <p>Domain and DNS administration, static site deployment over Git, TLS certificate
+           provisioning, and preserving mail routing through registrar migrations.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-<div class="card">
+<section id="about">
+  <div class="wrap">
+    <h3>About</h3>
+    <p style="color:var(--muted);max-width:760px;">
+      BharTek is an independent computer services practice founded by Bharathi Baskaran, a
+      Computer Science graduate of the University of Texas at Dallas specializing in Linux
+      systems and low-level software. The practice combines everyday computer and network
+      support with deeper systems engineering capability — kernel development, driver
+      debugging, and hardware-level diagnostics.
+    </p>
+  </div>
+</section>
 
-<h3>Engineering Services</h3>
-
-<p>
-
-PCIe debug
-<br>
-Firmware validation
-<br>
-Signal integrity analysis
-<br>
-System integration
-<br>
-Failure triage
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Diagnostic Tools</h3>
-
-<p>
-
-Advanced trace analysis
-<br>
-Failure signature detection
-<br>
-Automation
-<br>
-Hardware diagnostics
-<br>
-Telemetry visualization
-
-</p>
-
-</div>
-
+<section id="contact" class="alt contact">
+  <div class="wrap">
+    <h3>Contact</h3>
+    <p style="color:var(--muted);">
+      Email: <a href="mailto:contact@bhartek.com">contact@bhartek.com</a><br>
+      Based in Round Rock, Texas &mdash; serving the Austin and Dallas areas.
+    </p>
+  </div>
 </section>
 
 <footer>
-
-© 2026 BHARTEK
-
+  <div class="wrap">&copy; 2026 BharTek &middot; bhartek.com</div>
 </footer>
 
-<div id="aboutModal" class="modal">
-
-<div class="modal-content">
-
-<span class="close" onclick="closeModal()">&times;</span>
-
-<h2>About</h2>
-
-<p>
-
-<b>Co-Founder</b><br>
-
-Bharathi Baskaran
-
-</p>
-
-<p>
-
-<b>Co-Founder</b><br>
-
-Akila Baskaran
-
-</p>
-
-<p>
-
-Developing advanced PCIe diagnostics and engineering
-solutions for next-generation computing platforms.
-
-</p>
-
-<p>
-Contact: bharbird@bhartek.com
-</p>
-
-</div>
-
-</div>
-
-<script>
-
-function about(){
-document.getElementById("aboutModal").style.display="block";
-}
-
-function closeModal(){
-document.getElementById("aboutModal").style.display="none";
-}
-
-window.onclick=function(event){
-if(event.target==document.getElementById("aboutModal"))
-closeModal();
-}
-
-</script>
-
 </body>
-
 </html>
